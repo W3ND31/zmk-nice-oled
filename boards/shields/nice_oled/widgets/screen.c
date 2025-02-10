@@ -39,7 +39,7 @@ static void draw_canvas(lv_obj_t *widget, lv_color_t cbuf[],
   draw_background(canvas);
   draw_output_status(canvas, state);
   draw_battery_status(canvas, state);
-  draw_wpm_status(canvas, state);
+  // draw_wpm_status(canvas, state);
   draw_profile_status(canvas, state);
   draw_layer_status(canvas, state);
 
@@ -208,7 +208,7 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
   widget_battery_status_init();
   widget_layer_status_init();
   widget_output_status_init();
-  widget_wpm_status_init();
+  // widget_wpm_status_init();
 
   return 0;
 }
